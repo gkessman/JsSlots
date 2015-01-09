@@ -1,0 +1,67 @@
+<style type="text/css">
+html, body {
+}
+#top_bar 
+{
+    background-color: #424249;
+    padding: 0px;
+    height: 60px; 
+    width: 100%;
+}
+#outer_border 
+{ 
+    border: 2px solid;
+    height: 500px;
+    width:  600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title 
+{
+    border: 2px solid;
+    height: 30px;
+    width:  550px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#game_screen 
+{
+    border: 2px solid;
+    height: 300px;
+    width:  400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}    
+#prompt 
+{
+    border: 2px solid;
+    height: 30px;
+    width:  550px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}   
+#input_area 
+{
+    text-align: center;
+    border: 2px solid;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#button_area 
+{
+    text-align: center;
+    border: 2px solid;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+#button 
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+</style>
