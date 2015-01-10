@@ -1,67 +1,73 @@
-<style type="text/css">
-html, body {
+body {
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 #top_bar 
 {
-    background-color: #424249;
-    padding: 0px;
-    height: 60px; 
-    width: 100%;
+	position: relative;
+	overflow: hidden;
+    background-color:#424249;
+    height:100px; 
 }
-#outer_border 
-{ 
-    border: 2px solid;
-    height: 500px;
-    width:  600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#title 
+#title_text
 {
-    border: 2px solid;
-    height: 30px;
-    width:  550px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -55px;
+	color: orange;
+    font-weight:bold;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+#prompt 
+{
+    border:1px dashed;
+    border-radius: 25px;
+    height:30px;
+    width:550px;
+    margin-top:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#prompt_text
+{
+
 }
 #game_screen 
 {
-    border: 2px solid;
-    height: 300px;
-    width:  400px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    border:1px dashed;
+    border-radius: 25px;
+    height:300px;
+    width:400px;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
 }    
-#prompt 
-{
-    border: 2px solid;
-    height: 30px;
-    width:  550px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}   
 #input_area 
 {
-    text-align: center;
-    border: 2px solid;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    border:0px solid;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
 }
 #button_area 
 {
-    text-align: center;
-    border: 2px solid;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    border:0px solid;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
 } 
 #button 
 {
-    margin-right: auto;
-    margin-left: auto;
+    margin-right:auto;
+    margin-left:auto;
+    width:100px;
+    height: 25px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
-</style>
