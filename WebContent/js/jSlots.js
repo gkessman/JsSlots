@@ -49,16 +49,21 @@ function spin() {
     }
 }
 
-coins = prompt("Welcome to Slots! Insert Coins");
+function main() {
 
-while(coins > 0 || bet !== 'no' || bet !== null){
-    bet = prompt("Enter Bet");
-    if(bet === 'no' || bet === null){
-        break;
-    } else if (bet === '') {
-		bet = priorBet;
-    }
-    play(bet);
+document.getElementById('prompt_text').innerHTML += 'Welcome To Slots! Insert Coins';
+
+ //coins = prompt("Welcome to Slots! Insert Coins");
+ coins = document.getElementById('input').value
+ while(coins > 0 || bet !== 'no' || bet !== null){
+     bet = prompt("Enter Bet");
+     if(bet === 'no' || bet === null){
+         break;
+     } else if (bet === '') {
+ 		bet = priorBet;
+     }
+     play(bet);
+ }
 }
 
 function play(bet) {
@@ -94,8 +99,15 @@ function play(bet) {
     
 }
 
+
+main();
+
+
 if (coins <= 0) {
     console.log("You have no more coins, sorry!");
 } else if (bet === 'no' || bet === null){
     console.log("Thanks for playing!");
 }
+
+
+
