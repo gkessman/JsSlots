@@ -49,7 +49,7 @@ function spin() {
 }
 
 function intro() {
-    document.getElementById('prompt_text').innerHTML = 'Welcome To Slots! Insert Coins';
+    document.getElementById('prompt').innerHTML = 'Welcome To Slots! Insert Coins';
     document.getElementById('button').innerHTML = 'Insert';
     document.getElementById('button').setAttribute("onClick", "main()");
 }
@@ -57,7 +57,7 @@ function intro() {
 function main() {
     coins = document.getElementById('input').value
     document.getElementById('coins').innerHTML = coins;
-    document.getElementById('prompt_text').innerHTML = 'Please place bet below';  
+    document.getElementById('prompt').innerHTML = 'Please place bet below';  
     document.getElementById('button').innerHTML = 'PLAY';
     document.getElementById('input').value = 0;
     document.getElementById('button').setAttribute("onClick", "play()");
@@ -86,7 +86,7 @@ function validateWin() {
         }
 		coins = coins + payout;
         document.getElementById('coins').innerHTML = coins;
-        document.getElementById('winnings_prompt').innerHTML = 'HOORAY! You Won ' + payout + ' Coins!'; 
+        document.getElementById('prompt').innerHTML = 'HOORAY! You Won ' + payout + ' Coins!'; 
     }   
 }
 
@@ -104,7 +104,7 @@ function validateResults() {
             document.getElementById(i + '_0').innerHTML = sOut[i][0].name;
             document.getElementById(i + '_1').innerHTML = sOut[i][1].name;
             document.getElementById(i + '_2').innerHTML = sOut[i][2].name;                     
-            document.getElementById('winnings_prompt').innerHTML = 'Sorry, please try again!'; 
+            document.getElementById('prompt').innerHTML = 'Sorry, please try again!'; 
         }        
     }
 }
