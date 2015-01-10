@@ -10,29 +10,34 @@ var sIcons = {};
 sIcons.cherry = {
     name: " Cherry ",
     id: 1,
-    value: 1 
+    value: 1, 
+    imgsrc: '<img src=cherry.png>'
 };
 sIcons.bar = {
     name: "  Bar   ",
 	id: 2,
-    value: 1.25
+    value: 1.25,
+    imgsrc: '<img src=bar.png>'
 };
 sIcons.silver = {
     name: " Silver ",
 	id: 3,
-    value: 1.50
+    value: 1.50,
+    imgsrc: '<img src=bell.png>'
 };
 sIcons.gold = {
     name: "  Gold  ",
 	id: 4,
-    value: 2
+    value: 2,
+    imgsrc: '<img src=diamond.png>'
 };
 sIcons.seven = {
     name: "   7    ",
-	id: 5,
-    value: 5
+ 	id: 5,
+    value: 5,
+    imgsrc: "<img src=seven.png>"
 };
-
+ 
 var sOut = [[],[],[]];
 var sIn = [];
 sIn[0] = sIcons.cherry;
@@ -88,19 +93,22 @@ function play() {
 function validateResults() {
     //show results of spin
     for (var i = 0; i < 3; i++) {
-        if ((sOut[i][0].id === sOut[i][1].id) && (sOut[i][1].id === sOut[i][2].id)) {
-            document.getElementById(i + '_0').innerHTML = sOut[i][0].name;
-            document.getElementById(i + '_1').innerHTML = sOut[i][1].name;
-            document.getElementById(i + '_2').innerHTML = sOut[i][2].name;
+        if (((sOut[i][0].id === sOut[i][1].id) && (sOut[i][1].id === sOut[i][2].id))||
+            ((sOut[0][0].id === sOut[1][1].id) && (sOut[1][1].id === sOut[2][2].id))||
+            ((sOut[0][2].id === sOut[1][1].id) && (sOut[1][1].id === sOut[2][0].id))) {
+            document.getElementById(i + '_0').innerHTML = sOut[i][0].imgsrc;
+            document.getElementById(i + '_1').innerHTML = sOut[i][1].imgsrc;
+            document.getElementById(i + '_2').innerHTML = sOut[i][2].imgsrc;
             win = true;
             winRow.push(i);
         } else {
-            document.getElementById(i + '_0').innerHTML = sOut[i][0].name;
-            document.getElementById(i + '_1').innerHTML = sOut[i][1].name;
-            document.getElementById(i + '_2').innerHTML = sOut[i][2].name;
+            document.getElementById(i + '_0').innerHTML = sOut[i][0].imgsrc;
+            document.getElementById(i + '_1').innerHTML = sOut[i][1].imgsrc;
+            document.getElementById(i + '_2').innerHTML = sOut[i][2].imgsrc;
             document.getElementById('winnings_prompt').innerHTML = 'Sorry, please try again!'; 
         }        
-    }
+     }
+
 }
 
 intro();
