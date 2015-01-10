@@ -1,7 +1,6 @@
 var coins = 0;
 var bet =  0;
 var priorBet = 0;
-var keepPlaying = false;
 var win = false;
 var winRow = [];
 var payout = 0;
@@ -10,19 +9,19 @@ var sIcons = {};
 sIcons.cherry = {
     name: " Cherry ",
     id: 1,
-    value: 1 
+    value: .5 
 };
 sIcons.bar = {
     name: "  Bar   ",
 	id: 2,
-    value: 1.25
+    value: 1
 };
-sIcons.silver = {
+sIcons.horseshoe = {
     name: " Silver ",
 	id: 3,
     value: 1.50
 };
-sIcons.gold = {
+sIcons.diamond = {
     name: "  Gold  ",
 	id: 4,
     value: 2
@@ -37,8 +36,8 @@ var sOut = [[],[],[]];
 var sIn = [];
 sIn[0] = sIcons.cherry;
 sIn[1] = sIcons.bar;
-sIn[2] = sIcons.silver;
-sIn[3] = sIcons.gold;
+sIn[2] = sIcons.horseshoe;
+sIn[3] = sIcons.diamond;
 sIn[4] = sIcons.seven;
 
 function spin() {
@@ -133,4 +132,3 @@ if (coins <= 0) {
 } else if (bet === 'no' || bet === null){
     console.log("Thanks for playing!");
 }
-
