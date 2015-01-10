@@ -72,6 +72,14 @@ tr, td
     font-size: 25px;
     color: green;
 }
+#coin_display
+{
+    position: relative;
+    top: 33%;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orange;
+}
 #input_area 
 {
     border:0px solid;
