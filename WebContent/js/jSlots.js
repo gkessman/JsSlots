@@ -7,32 +7,27 @@ var payout = 0;
 var sIcons = {};
 
 sIcons.cherry = {
-    name: " Cherry ",
     id: 1,
-    value: .5 
-    imgsrc: '<img src=cherry.png>'
+    value: .5, 
+    imgsrc: "<img src=cherry.png>"
 };
 sIcons.bar = {
-    name: "  Bar   ",
 	id: 2,
-    value: 1
-    imgsrc: '<img src=bar.png>'
+    value: 1,
+    imgsrc: "<img src=bar.png>"
 };
 sIcons.horseshoe = {
-    name: " Silver ",
 	id: 3,
     value: 1.50,
-    imgsrc: '<img src=bell.png>'
+    imgsrc: "<img src=whoreshoe.png>"
 };
 sIcons.diamond = {
-    name: "  Gold  ",
 	id: 4,
     value: 2,
-    imgsrc: '<img src=diamond.png>'
+    imgsrc: "<img src=diamond.png>"
 };
 sIcons.seven = {
-    name: "   7    ",
- 	id: 5,
+  	id: 5,
     value: 5,
     imgsrc: "<img src=seven.png>"
 };
