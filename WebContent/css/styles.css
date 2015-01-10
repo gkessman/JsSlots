@@ -46,7 +46,44 @@ body {
     margin-top:10px;
     margin-left:auto;
     margin-right:auto;
-}    
+} 
+#coin_display
+{
+    position: relative;
+    top: 1%;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orange;
+}
+table
+{
+    margin-top: 10px;
+    table-layout: fixed;
+}   
+tr, td
+{
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    border: 2px solid orange;
+    border-collapse: separate;
+    border-radius: 25px;
+    padding: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0 auto;
+    height: 40px;
+}
+#row2
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: green;
+}
+#winnings_prompt
+{
+    margin-top: 10px;
+    height: 28%;
+}
 #input_area 
 {
     border:0px solid;
