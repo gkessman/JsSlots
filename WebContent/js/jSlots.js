@@ -66,14 +66,21 @@ function main() {
 
 function play() {
     bet = document.getElementById('input').value;
-    coins = coins - bet
-    win = false;
-    winRow = [];
-    payout = 0;
-    document.getElementById('coins').innerHTML = coins;
-    spin();
-    validateResults();
+        win = false;
+        winRow = [];
+        payout = 0;
+        if (isNaN(bet)) {
+            validateInput();
+        } else { 
+        coins = coins - bet       
+        document.getElementById('coins').innerHTML = coins;
+        spin();
+        validateResults();
+        validateWin();
+    }
+}
 
+function validateWin() {
     if (win) {
         for (i = 0; i < winRow.length; i++) {
             payout = payout + (bet * sOut[(winRow[i])][1].value);       
@@ -91,16 +98,32 @@ function validateResults() {
         if ((sOut[i][0].id === sOut[i][1].id) && (sOut[i][1].id === sOut[i][2].id)) {
             document.getElementById(i + '_0').innerHTML = sOut[i][0].name;
             document.getElementById(i + '_1').innerHTML = sOut[i][1].name;
-            document.getElementById(i + '_2').innerHTML = sOut[i][2].name;
+            document.getElementById(i + '_2').innerHTML = sOut[i][2].name;        
             win = true;
             winRow.push(i);
         } else {
             document.getElementById(i + '_0').innerHTML = sOut[i][0].name;
             document.getElementById(i + '_1').innerHTML = sOut[i][1].name;
-            document.getElementById(i + '_2').innerHTML = sOut[i][2].name;
+            document.getElementById(i + '_2').innerHTML = sOut[i][2].name;                     
             document.getElementById('winnings_prompt').innerHTML = 'Sorry, please try again!'; 
         }        
     }
+}
+
+function validateInput() {
+    if (bet == "winrow") {
+        bet = 100;  //just to give a value for winning computation. Otherwise coins value becomes isNaN
+        spin();
+        sOut[1][1] = sOut[1][0];
+        sOut[1][2] = sOut[1][0];
+    } else if (bet == "windiag") {
+        bet = 100;
+        spin();
+        sOut[1][1] = sOut[0][0];
+        sOut[2][2] = sOut[0][0];
+    }
+    validateResults();
+    validateWin();
 }
 
 intro();
