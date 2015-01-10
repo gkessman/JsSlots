@@ -106,7 +106,7 @@ function validateResults() {
             document.getElementById(i + '_0').innerHTML = sOut[i][0].imgsrc;
             document.getElementById(i + '_1').innerHTML = sOut[i][1].imgsrc;
             document.getElementById(i + '_2').innerHTML = sOut[i][2].imgsrc;
-            document.getElementById('winnings_prompt').innerHTML = 'Sorry, please try again!'; 
+            document.getElementById('prompt').innerHTML = 'Sorry, please try again!'; 
         }        
      }
 
