@@ -50,27 +50,39 @@ function spin() {
 }
 
 function main() {
-
-document.getElementById('prompt_text').innerHTML += 'Welcome To Slots! Insert Coins';
-
- //coins = prompt("Welcome to Slots! Insert Coins");
  coins = document.getElementById('input').value
- while(coins > 0 || bet !== 'no' || bet !== null){
-     bet = prompt("Enter Bet");
-     if(bet === 'no' || bet === null){
-         break;
-     } else if (bet === '') {
- 		bet = priorBet;
-     }
-     play(bet);
- }
+ document.getElementById('prompt_text').innerHTML = 'Welcome To Slots! Insert Coins';
+ document.getElementById('button').setAttribute("onClick", "main()");
+ document.getElementById('button').innerHTML = 'Insert';
+
+ if (coins == 0){
+  
+  }else{ 
+       document.getElementById('button').setAttribute("onClick", "play()");
+       document.getElementById('button').innerHTML = 'PLAY';
+       document.getElementById('input').value = 0;
+       }
 }
 
-function play(bet) {
-	priorBet = bet;
+
+function play() {
+   console.log(" in play function");
+   bet = document.getElementById('input').value;
+   if (bet == 0 || bet == null ){
+     document.getElementById('prompt_text').innerHTML = 'Please place initial bet below';  
+   }else{
+      // while(coins > 0 || bet !== 'no'){
+      //   console.log(" in play function");
+      //  if(bet === 'no' || bet === null){
+      //      break;
+      //  } else if (bet === '') {
+      //     bet = priorBet;
+      //  }
+    //}
     win = false;
     winRow = [];
     payout = 0;
+ 
     spin();
     //show results of spin
     console.log(" ");
@@ -95,10 +107,9 @@ function play(bet) {
         }
 		coins = coins + payout;
         console.log("Total Payout: " + payout + " | Total Coins: " + coins + " coins");
-    }
-    
+    }   
+  }
 }
-
 
 main();
 
