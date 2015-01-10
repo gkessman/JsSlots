@@ -50,10 +50,11 @@ body {
 table
 {
     margin-top: 30px;
+    table-layout: fixed;
 }   
 tr, td
 {
-    table-layout: fixed;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
     border: 2px solid orange;
     border-collapse: separate;
     border-radius: 25px;
@@ -61,8 +62,15 @@ tr, td
     padding-top: 2px;
     padding-bottom: 2px;
     margin: 0 auto;
-    width: fixed;
+    height: 40px;
 
+}
+#row2
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: green;
 }
 #input_area 
 {
