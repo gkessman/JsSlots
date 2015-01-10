@@ -71,14 +71,7 @@ function play() {
    if (bet == 0 || bet == null ){
      document.getElementById('prompt_text').innerHTML = 'Please place initial bet below';  
    }else{
-      // while(coins > 0 || bet !== 'no'){
-      //   console.log(" in play function");
-      //  if(bet === 'no' || bet === null){
-      //      break;
-      //  } else if (bet === '') {
-      //     bet = priorBet;
-      //  }
-    //}
+
     win = false;
     winRow = [];
     payout = 0;
