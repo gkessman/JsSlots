@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Comunica;
+    src: url('../font/COMUNICA_TYPE.ttf');
+}
 body {
     margin: 0;
     text-align: center;
@@ -19,23 +23,25 @@ body {
 	margin-left: -55px;
 	color: orange;
     font-weight:bold;
-    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
-    font-size: 40px;
+    font-family: Comunica;
+    font-size: 60px;
 }
 #prompt 
 {
-    border:1px dashed;
+    border:0px dashed;
     border-radius: 25px;
     height:30px;
     width:400px;
     margin-top:100px;
     margin-left:auto;
     margin-right:auto;
-    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-family: Comunica;
+    font-size: 24px;
+    font-weight: bold;
 }
 #game_screen 
 {
-    border:1px dashed;
+    border:0px dashed;
     border-radius: 25px;
     height:300px;
     width:400px;
@@ -47,8 +53,9 @@ body {
 {
     position: relative;
     top: 1%;
-    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-family: Comunica;
     font-weight: bold;
+    font-size: 24px;
     color: orange;
 }
 table
