@@ -87,7 +87,7 @@ function play() {
 function validateWin() {
     if (win) {
         for (i = 0; i < winRow.length; i++) {
-            payout = payout + (bet * sOut[(winRow[i])][1].value);       
+           payout =  Math.round(payout + (bet * sOut[(winRow[i])][1].value));       
         }
 		coins = coins + payout;
         document.getElementById('coins').innerHTML = coins;
