@@ -53,7 +53,7 @@ function spin() {
 function intro() {
     spin();
     validateResults();
-    document.getElementById('prompt').innerHTML = 'Welcome To Slots! Insert Coins';
+    document.getElementById('prompt').innerHTML = 'Welcome To Slots. Insert Coins';
     document.getElementById('button').innerHTML = 'Insert';
     document.getElementById('button').setAttribute("onClick", "main()");
     return;

@@ -7,6 +7,7 @@ body {
     text-align: center;
     height: 100%;
     width: 100%;
+    letter-spacing: 2px;
 }
 #top_bar 
 {
@@ -25,6 +26,7 @@ body {
     font-weight:bold;
     font-family: Comunica;
     font-size: 60px;
+    letter-spacing: 3px;
 }
 #prompt 
 {
@@ -88,6 +90,9 @@ table
     border-color: #333366; 
     background-color: #FFFFFF; 
     text-align:center;
+    font-family: Comunica;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -111,4 +116,7 @@ table
     border-color: #333366; 
     background-color: #FFFFFF; 
     outline: 0 none;
+    font-family: Comunica;
+    font-weight: bold;
+    font-size: 18px;
 }
