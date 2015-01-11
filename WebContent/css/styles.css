@@ -2,6 +2,30 @@
     font-family: Comunica;
     src: url('../font/COMUNICA_TYPE.ttf');
 }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 body {
     margin: 0;
     text-align: center;
@@ -18,6 +42,8 @@ body {
 }
 #title_text
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */    
 	position: absolute;
 	bottom: 5%;
 	left: 50%;
@@ -30,6 +56,8 @@ body {
 }
 #prompt 
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
     border:0px dashed;
     border-radius: 25px;
     height:30px;
@@ -43,6 +71,8 @@ body {
 }
 #game_screen 
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
     border:0px dashed;
     border-radius: 25px;
     height:300px;
@@ -53,6 +83,8 @@ body {
 } 
 #coin_display
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
     position: relative;
     top: 1%;
     font-family: Comunica;
@@ -60,9 +92,6 @@ body {
     font-size: 24px;
     color: orange;
 }
-
-
-
 table
 {
     margin-top: 50px;
@@ -71,7 +100,6 @@ table
     border: 0px solid navy;
     width: 95%;
     height: 60%;
-
 }   
 #input_area 
 { 
@@ -83,6 +111,8 @@ table
 
 #input
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */    
     border:2px solid;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -94,10 +124,10 @@ table
     font-weight: bold;
     font-size: 20px;
 }
-
-
 #button_area 
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */    
     border:0px solid;
     margin-top:10px;
     margin-left:auto;
