@@ -4,7 +4,7 @@ var priorBet = 0;
 var win = false;
 var winRow = [];
 var payout = 0;
-var snd = new Audio("ohyeah.wav"); // buffers automatically when created
+var snd = new Audio("audio/ohyeah.wav"); // buffers automatically when created
 
 var sIcons = {};
 
