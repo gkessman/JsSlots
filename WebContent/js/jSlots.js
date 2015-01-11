@@ -11,27 +11,27 @@ var sIcons = {};
 sIcons.cherry = {
     id: 1,
     value: .5, 
-    imgsrc: "<img src=cherry.png>"
+    imgsrc: "<img src=img/cherry.png>"
 };
 sIcons.bar = {
 	id: 2,
     value: 1,
-    imgsrc: "<img src=bar.png>"
+    imgsrc: "<img src=img/bar.png>"
 };
 sIcons.horseshoe = {
 	id: 3,
     value: 1.50,
-    imgsrc: "<img src=whoreshoe.png>"
+    imgsrc: "<img src=img/whoreshoe.png>"
 };
 sIcons.diamond = {
 	id: 4,
     value: 2,
-    imgsrc: "<img src=diamond.png>"
+    imgsrc: "<img src=img/diamond.png>"
 };
 sIcons.seven = {
   	id: 5,
     value: 5,
-    imgsrc: "<img src=seven.png>"
+    imgsrc: "<img src=img/seven.png>"
 };
  
 var sOut = [[],[],[]];
