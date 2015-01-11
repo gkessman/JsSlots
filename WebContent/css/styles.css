@@ -1,8 +1,37 @@
+@font-face {
+    font-family: Comunica;
+    src: url('../font/COMUNICA_TYPE.ttf');
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 body {
     margin: 0;
     text-align: center;
     height: 100%;
     width: 100%;
+    letter-spacing: 2px;
 }
 #top_bar 
 {
@@ -13,17 +42,22 @@ body {
 }
 #title_text
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */    
 	position: absolute;
 	bottom: 5%;
 	left: 50%;
 	margin-left: -55px;
 	color: orange;
     font-weight:bold;
-    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
-    font-size: 40px;
+    font-family: Comunica;
+    font-size: 60px;
+    letter-spacing: 3px;
 }
 #prompt 
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
     border:0px dashed;
     border-radius: 25px;
     height:30px;
@@ -31,10 +65,14 @@ body {
     margin-top:100px;
     margin-left:auto;
     margin-right:auto;
-    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-family: Comunica;
+    font-size: 24px;
+    font-weight: bold;
 }
 #game_screen 
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
     border:0px dashed;
     border-radius: 25px;
     height:300px;
@@ -45,15 +83,15 @@ body {
 } 
 #coin_display
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
     position: relative;
     top: 1%;
-    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-family: Comunica;
     font-weight: bold;
+    font-size: 24px;
     color: orange;
 }
-
-
-
 table
 {
     margin-top: 50px;
@@ -62,7 +100,6 @@ table
     border: 0px solid navy;
     width: 95%;
     height: 60%;
-
 }   
 
 td.gradeTop
@@ -96,6 +133,8 @@ td.gradeBot
 
 #input
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */    
     border:2px solid;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -103,11 +142,14 @@ td.gradeBot
     border-color: #333366; 
     background-color: #FFFFFF; 
     text-align:center;
+    font-family: Comunica;
+    font-weight: bold;
+    font-size: 20px;
 }
-
-
 #button_area 
 {
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */    
     border:0px solid;
     margin-top:10px;
     margin-left:auto;
@@ -126,4 +168,7 @@ td.gradeBot
     border-color: #333366; 
     background-color: #FFFFFF; 
     outline: 0 none;
+    font-family: Comunica;
+    font-weight: bold;
+    font-size: 18px;
 }

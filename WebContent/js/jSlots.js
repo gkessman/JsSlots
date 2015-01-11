@@ -51,9 +51,12 @@ function spin() {
 }
 
 function intro() {
-    document.getElementById('prompt').innerHTML = 'Welcome To Slots! Insert Coins';
+    spin();
+    validateResults();
+    document.getElementById('prompt').innerHTML = 'Welcome To Slots. Insert Coins';
     document.getElementById('button').innerHTML = 'Insert';
     document.getElementById('button').setAttribute("onClick", "main()");
+    return;
 }
 
 function main() {
