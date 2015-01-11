@@ -33,6 +33,21 @@ sIcons.seven = {
     value: 5,
     imgsrc: "<img src=img/seven.png>"
 };
+sIcons.dollar = {
+    id: 6,
+    value: 6,
+    imgsrc: "<img src=img/dollar.png>"
+};
+sIcons.whoreshoe = {
+    id: 7,
+    value: 7,
+    imgsrc: "<img src=img/whoreshoe.png>"
+};
+sIcons.lemon = {
+    id: 8,
+    value: 8,
+    imgsrc: "<img src=img/lemon.png>"
+};
  
 var sOut = [[],[],[]];
 var sIn = [];
@@ -41,11 +56,14 @@ sIn[1] = sIcons.bar;
 sIn[2] = sIcons.horseshoe;
 sIn[3] = sIcons.diamond;
 sIn[4] = sIcons.seven;
+sIn[5] = sIcons.dollar;
+sIn[6] = sIcons.whoreshoe;
+sIn[7] = sIcons.lemon;
 
 function spin() {
     for (var x = 0; x < 3; x++) {
         for (var y = 0; y < 3; y++) {
-            sOut[y][x] = sIn[Math.floor(Math.random() * 5)];
+            sOut[y][x] = sIn[Math.floor(Math.random() * 8)];
         }
     }
 }
