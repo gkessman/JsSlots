@@ -27,7 +27,7 @@ body {
     border:1px dashed;
     border-radius: 25px;
     height:30px;
-    width:550px;
+    width:400px;
     margin-top:100px;
     margin-left:auto;
     margin-right:auto;
@@ -54,20 +54,13 @@ body {
 table
 {
     margin-top: 50px;
+    margin-left: 10px;
     table-layout: fixed;
+    border: 0px solid navy;
+    width: 95%;
+    height: 60%;
+
 }   
-tr, td
-{
-    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
-    border: 2px solid navy;
-    border-collapse: separate;
-    border-radius: 25px;
-    padding: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin: 0 auto;
-    height: 40px;
-}
 #input_area 
 {
     border:0px solid;
