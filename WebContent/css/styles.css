@@ -64,6 +64,28 @@ table
     height: 60%;
 
 }   
+
+td.gradeTop
+{ 
+    border: 10px solid none;
+    border-radius: 20px;
+    background:linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(0,0,0,0) 25%);
+    background:-webkit-linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(0,0,0,0) 25%);
+    background:-o-linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(0,0,0,0) 25%);
+    background:-moz-linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(0,0,0,0) 25%);
+}
+
+td.gradeBot 
+{    
+    border: 10px solid none;
+    border-radius: 20px;
+    background:linear-gradient(to top, rgba(0,0,0,.1) 0%,rgba(0,0,0,0)25%);
+    background:-webkit-linear-gradient(to top, rgba(0,0,0,.1) 0%,rgba(0,0,0,0) 25%);
+    background:-o-linear-gradient(to top, rgba(0,0,0,.1) 0%,rgba(0,0,0,0) 25);
+    background:-moz-linear-gradient(to top, rgba(0,0,0,.1) 0%,rgba(0,0,0,0) 25%);
+}
+
+
 #input_area 
 { 
     border:0px solid;
