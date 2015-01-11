@@ -74,11 +74,12 @@ function intro() {
     document.getElementById('prompt').innerHTML = 'Welcome To Slots. Insert Coins';
     document.getElementById('button').innerHTML = 'Insert';
     document.getElementById('button').setAttribute("onClick", "main()");
-    return;
+  //  return;
 }
 
 function main() {
     coins = document.getElementById('input').value
+    validateInput();
     document.getElementById('coins').innerHTML = coins;
     document.getElementById('prompt').innerHTML = 'Please place bet below';  
     document.getElementById('button').innerHTML = 'PLAY';
@@ -87,19 +88,17 @@ function main() {
 }
 
 function play() {
-    bet = document.getElementById('input').value;
+        bet = document.getElementById('input').value;
         win = false;
         winRow = [];
         payout = 0;
-        if (isNaN(bet)) {
-            validateInput();
-        } else { 
+        validateInput();
         coins = coins - bet       
         document.getElementById('coins').innerHTML = coins;
         spin();
         validateResults();
         validateWin();
-    }
+    
 }
 
 function validateWin() {
@@ -138,19 +137,60 @@ function validateResults() {
 }
 
 function validateInput() {
-    if (bet == "winrow") {
-        bet = 100;  //just to give a value for winning computation. Otherwise coins value becomes isNaN
-        spin();
-        sOut[1][1] = sOut[1][0];
-        sOut[1][2] = sOut[1][0];
-    } else if (bet == "windiag") {
-        bet = 100;
-        spin();
-        sOut[1][1] = sOut[0][0];
-        sOut[2][2] = sOut[0][0];
+   var testVal = null;
+   if(isNaN(coins)){
+    testVal = coins;
+     testMe(testVal);
+     coins = 0;
+   }
+
+   if (isNaN(bet)) {
+       testVal = bet;
+       testMe(testVal);
+       bet = 0;
+    }   
+
+    if(bet > coins){
+      bet = coins
+      //'Max Bet! Ballsy move... ';
+       document.getElementById('input').value = bet; 
     }
-    validateResults();
-    validateWin();
+}
+
+function testMe(tVal){
+      switch(tVal){
+        case "winrow":
+          bet = 100;  //just to give a value for winning computation. Otherwise coins value becomes isNaN
+          spin();
+          sOut[1][1] = sOut[1][0];
+          sOut[1][2] = sOut[1][0];
+          validateResults();
+          validateWin();
+          break;
+        case "windiag":
+          bet = 100;
+          spin();
+          sOut[1][1] = sOut[0][0];
+          sOut[2][2] = sOut[0][0];
+          validateResults();
+          validateWin();
+          break;
+        default:
+           document.getElementById('prompt').innerHTML = 'Dude...Come on...'; 
+           //some dick  entered an NaN so stop the presses
+           document.getElementById('input').value = 0;
+    //       intro();
+           exit();
+        }
+}
+
+function exit(){
+ throw new Error('This is not an error. This is just to abort javascript');
+}
+
+
+window.onload = function(){
+  document.body.setAttribute("class", "loaded");
 }
 
 intro();

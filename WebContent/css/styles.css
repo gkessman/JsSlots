@@ -37,48 +37,80 @@ body {
     width: 100%;
     letter-spacing: 2px;
 }
-#top_bar 
-{
-	position: relative;
-	overflow: hidden;
-    background-color:#424249;
-    height:100px; 
-}
-#title_text 
-{
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */    
-	position: absolute;
-	bottom: 5%;
-	left: 50%;
-    margin-left: -70px;
-	color: orange;
-    font-weight:bold;
-    font-family: Comfortaa;
-    font-size: 48px;
-    letter-spacing: 3px;
- }
 
-#title_text:hover
-{
-    position: absolute;
+body.loaded #title_text
+{  
+    -moz-animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s; 
+
     bottom: 5%;
+    position: absolute;
     left: 50%;
     margin-left: -70px;
     color: orange;
     font-weight:bold;
     font-family: Comfortaa;
     font-size: 48px;
-    letter-spacing: 3px;
-     -webkit-filter: invert(100%);   
-     -webkit-transition-property: -webkit-filter;
-     -webkit-transition-duration: 0.5s;
-     -webkit-transition-timing-function: ease;
+    letter-spacing: 2px;
+    line-height: 58px;
+    -webkit-transition-property: letter-spacing, line-height;
+    -webkit-transition-duration: 1.5s;
+    -webkit-transition-timing-function: ease;
     /* Standard syntax */
-     transition-property: -webkit-filter;
-     transition-duration: 1.5s;
-     transition-timing-function: ease;            
+    transition-property: letter-spacing, line-height;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;  
+     
+
 }
+
+#top_bar 
+{ -moz-animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s; 
+	position: relative;
+	overflow: hidden;
+    background-color:#424249;
+    height:100px; 
+}
+
+
+
+#title_text 
+{  
+	bottom: 5%;
+    position: absolute;
+	left: 50%;
+    margin-left: -70px;
+	color: orange;
+    font-weight:bold;
+    font-family: Comfortaa;
+    font-size: 48px;
+    letter-spacing: 10px;
+    line-height: 200px;
+ }
+
+
+#title_text:hover #poop
+{
+    bottom: 5%;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    color: orange;
+    font-weight:bold;
+    font-family: Comfortaa;
+    font-size: 48px;
+    letter-spacing: 10px;
+    line-height: 300px;
+    -webkit-transition-property: letter-spacing, line-height;
+    -webkit-transition-duration: 1.5s;
+    -webkit-transition-timing-function: ease;
+    /* Standard syntax */
+    transition-property: letter-spacing, line-height;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;  
+}
+
 
 #prompt 
 {
