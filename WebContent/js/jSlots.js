@@ -4,6 +4,8 @@ var priorBet = 0;
 var win = false;
 var winRow = [];
 var payout = 0;
+var snd = new Audio("ohyeah.wav"); // buffers automatically when created
+
 var sIcons = {};
 
 sIcons.cherry = {
@@ -102,11 +104,13 @@ function validateResults() {
             document.getElementById(i + '_2').innerHTML = sOut[i][2].imgsrc;
             win = true;
             winRow.push(i);
+            snd.play();
         } else {
             document.getElementById(i + '_0').innerHTML = sOut[i][0].imgsrc;
             document.getElementById(i + '_1').innerHTML = sOut[i][1].imgsrc;
             document.getElementById(i + '_2').innerHTML = sOut[i][2].imgsrc;
             document.getElementById('prompt').innerHTML = 'Sorry, please try again!'; 
+
         }        
      }
 
