@@ -166,7 +166,8 @@ function testMe(tVal){
           sOut[1][2] = sOut[1][0];
           validateResults();
           validateWin();
-          break;
+          exit();
+          
         case "windiag":
           bet = 100;
           spin();
@@ -174,7 +175,7 @@ function testMe(tVal){
           sOut[2][2] = sOut[0][0];
           validateResults();
           validateWin();
-          break;
+          exit();
         default:
            document.getElementById('prompt').innerHTML = 'Dude...Come on...'; 
            //some dick  entered an NaN so stop the presses
