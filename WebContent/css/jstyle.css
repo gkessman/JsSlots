@@ -65,8 +65,7 @@ body.loaded #title_text
 }
 
 #top_bar 
-{ -moz-animation: fadein 1.5s;
-    -webkit-animation: fadein 1.5s; 
+{ 
 	position: relative;
 	overflow: hidden;
     background-color:#424249;
