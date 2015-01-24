@@ -2,10 +2,12 @@
     font-family: Comunica;
     src: url('../font/COMUNICA_TYPE.ttf');
 }
+
 @font-face {
     font-family: Comfortaa;
     src: url('../font/Comfortaa-Regular.ttf');
 }
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -14,6 +16,7 @@
         opacity:1;
     }
 }
+
 @-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0;
@@ -22,6 +25,7 @@
         opacity:1;
     }
 }
+
 @-webkit-keyframes fadein { /* Safari and Chrome */
     from {
         opacity:0;
@@ -30,6 +34,7 @@
         opacity:1;
     }
 }
+
 body {
     margin: 0;
     text-align: center;
@@ -40,28 +45,8 @@ body {
 
 body.loaded #title_text
 {  
-    -moz-animation: fadein 1.5s;
-    -webkit-animation: fadein 1.5s; 
-
-    bottom: 5%;
-    position: absolute;
-    left: 50%;
-    margin-left: -70px;
-    color: orange;
-    font-weight:bold;
-    font-family: Comfortaa;
-    font-size: 48px;
-    letter-spacing: 2px;
-    line-height: 58px;
-    -webkit-transition-property: letter-spacing, line-height;
-    -webkit-transition-duration: 1.5s;
-    -webkit-transition-timing-function: ease;
-    /* Standard syntax */
-    transition-property: letter-spacing, line-height;
-    transition-duration: 1.5s;
-    transition-timing-function: ease;  
-     
-
+    margin: 30px 0px 0px 0px;   
+    letter-spacing: 3px;        
 }
 
 #top_bar 
@@ -72,49 +57,29 @@ body.loaded #title_text
     height:100px; 
 }
 
-
-
 #title_text 
 {  
-	bottom: 5%;
-    position: absolute;
-	left: 50%;
-    margin-left: -70px;
+    margin: -100px 0px 0px 0px;
 	color: orange;
     font-weight:bold;
     font-family: Comfortaa;
     font-size: 48px;
-    letter-spacing: 10px;
-    line-height: 200px;
- }
-
-
-#title_text:hover #poop
-{
-    bottom: 5%;
-    position: absolute;
-    left: 50%;
-    margin-left: -70px;
-    color: orange;
-    font-weight:bold;
-    font-family: Comfortaa;
-    font-size: 48px;
-    letter-spacing: 10px;
-    line-height: 300px;
-    -webkit-transition-property: letter-spacing, line-height;
-    -webkit-transition-duration: 1.5s;
-    -webkit-transition-timing-function: ease;
-    /* Standard syntax */
-    transition-property: letter-spacing, line-height;
-    transition-duration: 1.5s;
-    transition-timing-function: ease;  
+    letter-spacing: 20px;
+    -o-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -webkit-transition: 1.5s;    
+    transition: 1.5s;        
 }
 
+body #title_text:hover
+{
+    margin: -100px 0px 0px 0px;   
+    letter-spacing: 20px;  
+}
 
 #prompt 
 {
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
     border:0px dashed;
     border-radius: 25px;
     height:30px;
@@ -126,10 +91,9 @@ body.loaded #title_text
     font-size: 24px;
     font-weight: bold;
 }
+
 #game_screen 
 {
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
     border:0px dashed;
     border-radius: 25px;
     height:300px;
@@ -138,10 +102,9 @@ body.loaded #title_text
     margin-left:auto;
     margin-right:auto;
 } 
+
 #coin_display
 {
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
     position: relative;
     top: 1%;
     font-family: Comunica;
@@ -149,6 +112,7 @@ body.loaded #title_text
     font-size: 24px;
     color: orange;
 }
+
 table
 {
     margin-top: 50px;
@@ -157,7 +121,8 @@ table
     border: 0px solid navy;
     width: 95%;
     height: 60%;
-}   
+} 
+
 td.gradeTop
 { 
     border: 10px solid none;
@@ -167,6 +132,7 @@ td.gradeTop
     background:-o-linear-gradient(to bottom, rgba(0,0,0,.07) 0%,rgba(0,0,0,0) 16%);
     background:-moz-linear-gradient(to bottom, rgba(0,0,0,.07) 0%,rgba(0,0,0,0) 16%);
 }
+
 td.gradeBot 
 {    
     border: 10px solid none;
@@ -176,6 +142,7 @@ td.gradeBot
     background:-o-linear-gradient(to top, rgba(0,0,0,.07) 0%,rgba(0,0,0,0) 16%);
     background:-moz-linear-gradient(to top, rgba(0,0,0,.07) 0%,rgba(0,0,0,0) 16%);
 }
+
 #input_area 
 { 
     border:0px solid;
@@ -186,8 +153,6 @@ td.gradeBot
 
 #input
 {
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */    
     border:2px solid;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -200,15 +165,15 @@ td.gradeBot
     font-size: 16px;
     letter-spacing: 1px;
 }
+
 #button_area 
 {
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */    
     border:0px solid;
     margin-top:10px;
     margin-left:auto;
     margin-right:auto;
 } 
+
 #button 
 {
     margin-right:auto;
@@ -226,4 +191,10 @@ td.gradeBot
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 1px;
+}
+
+#title_text, #title_text:hover, #prompt, #game_screen, #coin_display, #input, #button_area
+{
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;   
 }
